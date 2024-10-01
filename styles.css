@@ -1,0 +1,119 @@
+/* Definindo um esquema de cores */
+:root {
+    --cor-principal: #FF0000; /* Vermelho */
+    --cor-secundaria: #ffffff; /* Branco (não será usado) */
+    --cor-acento: #333333; /* Preto (não será usado) */
+    --cor-fundo: #000000; /* Fundo preto */
+}
+
+/* Resetando margens e padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--cor-fundo); /* Fundo preto */
+    color: var(--cor-principal); /* Texto vermelho */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background: var(--cor-acento);
+    color: var(--cor-principal);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex; /* Flexbox para alinhar logotipo e navegação */
+    justify-content: center; /* Centralizar o conteúdo do cabeçalho */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+.logo {
+    margin-right: auto; /* Para manter o logotipo à esquerda */
+}
+
+nav {
+    margin-left: auto; /* Para manter a navegação à direita */
+}
+
+.logo h1 {
+    color: var(--cor-principal); /* Cor vermelha para o logotipo */
+    font-size: 24px; /* Ajustar o tamanho do texto */
+}
+
+/* Estilizando a navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--cor-principal); /* Texto vermelho para os links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efeito hover nos links de navegação */
+nav a:hover {
+    color: #FFFFFF; /* Muda a cor para branco no hover */
+}
+
+/* Estilizando as seções do main */
+main {
+    padding: 70px 20px; /* espaço para o cabeçalho fixo */
+}
+
+/* Estilizando o formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto; /* Centraliza o formulário */
+}
+
+label {
+    margin-bottom: 5px;
+    color: var(--cor-principal);
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid var(--cor-principal); /* Bordas vermelhas */
+    border-radius: 5px;
+    background-color: #333; /* Fundo cinza escuro para campos */
+    color: var(--cor-principal); /* Texto vermelho nos campos */
+}
+
+button {
+    padding: 10px;
+    background-color: var(--cor-principal); /* Botão vermelho */
+    color: var(--cor-acento); /* Texto branco no botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFFFFF; /* Botão fica branco no hover */
+    color: var(--cor-principal); /* Texto vermelho no hover */
+}
+
+/* Estilizando o rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--cor-acento);
+    color: var(--cor-principal);
+}
